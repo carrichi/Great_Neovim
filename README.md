@@ -45,7 +45,7 @@ En este modo es el que se mantiene activo la mayoría del tiempo y es el modo qu
 
 Entre estas acciones están las teclas de desplazamiento:
 
-- `j` : Para poder moverse una línea hacia abajo.
+- **`j`** : Para poder moverse una línea hacia abajo.
 - `k` : Para poder moverse una línea hacia arriba.
 - `h` : Para poder moverse un caracter hacia la izquierda.
 - `l` : Para poder moverse un caracter hacia la derecha.
@@ -61,25 +61,25 @@ Entre estas acciones están las teclas de desplazamiento:
 - `Ctrl + f` ó `Shift + Abajo` : Desplaza la pantalla en saltos grandes hacia ABAJO.
 - `gg` : Da un salto al inicio del archivo.
 - `G` : Da un salto al final del archivo.
-- `<Numero>G` : Permite moverte a una línea en específico.
+- `<Número>G` : Permite moverte a una línea en específico.
 
 Para realizar movimientos muy concretos dentro de una misma línea:
 
-- f<Caracter> : Salto al siguiente caracter ingresado. (Se posiciona por encima del caracter buscado)
-- F<Caracter> : Salto al anterior caracter ingresado. (Se posiciona por encima del caracter buscado)
-- t<Caracter> : Da un salto al siguiente caracter ingresado. (Se posiciona por detrás del caracter buscado)
-- T<Caracter> : Moverse al anterior caracter. (Se posiciona por delante del caracter buscado)
+- `f<Caracter>` : Salto al siguiente caracter ingresado. (Se posiciona por encima del caracter buscado)
+- `F<Caracter>` : Salto al anterior caracter ingresado. (Se posiciona por encima del caracter buscado)
+- `t<Caracter>` : Da un salto al siguiente caracter ingresado. (Se posiciona por detrás del caracter buscado)
+- `T<Caracter>` : Moverse al anterior caracter. (Se posiciona por delante del caracter buscado)
 
 Otros comandos que actuan en modo normal:
 
-- u : Permite deshacer la última acción realizada.
-- Ctrl + r : Permite re-hacer el último comando realizado.
-- x : Permite "cortar" el contenido del archivo caracter a caracter en la posición ACTUAL del cursor.
-- X : Realiza la misma función que la tecla "x", pero "corta" el caracter ANTERIOR A LA POSICIÓN del cursor.
-- << ó >> : Permite aplicar o quitar una tabulación a la linea en donde se encuentra el cursor.
+- `u` : Permite deshacer la última acción realizada.
+- `Ctrl + r` : Permite re-hacer el último comando realizado.
+- `x` : Permite "cortar" el contenido del archivo caracter a caracter en la posición ACTUAL del cursor.
+- `X` : Realiza la misma función que la tecla "x", pero "corta" el caracter ANTERIOR A LA POSICIÓN del cursor.
+- `<<` ó `>>` : Permite aplicar o quitar una tabulación a la linea en donde se encuentra el cursor.
 
 ## Comando
-Teclas para acceder a modo comando: / ? :
+En este modo se realizan instrucciones específicas como búsquedas o ejecución de comandos en Shell. Para poder acceder a este modo es necesario utilizar las teclas: `/`, `?` ó `:`.
 - :help :h
 - :write
 - :quit
@@ -91,7 +91,7 @@ Teclas para acceder a modo comando: / ? :
 - :N
 - :buffers
     - Lo que indica el #, %a y si esta vacio.
-- :buffer <Numero>
+- :buffer <Número>
 
 Comandos utilizados en situaciones muy específicas:
 
@@ -140,11 +140,11 @@ Teclas que te permiter reemplazar texto:
 - cw :
 - ciw : 
 - dw : 
-- <Numero>
+- <Número>
 - v% :
 
 ## Operador "v"
-- <Numero>v : Numero de palabras seleccionadas.
+- <Número>v : Numero de palabras seleccionadas.
 
 ## Operador "d"
 - dw :
@@ -154,7 +154,7 @@ Teclas que te permiter reemplazar texto:
 - d$ ó D :
 - d% :
 - d0 :
-- d<Numero><Dirección h,j,k,l> :
+- d<Número><Dirección h,j,k,l> :
 
 ### Faltan mas operadores.
 
@@ -207,7 +207,7 @@ Esta parte aún se encuentra en desarrollo...
 - :vsplit
 - :hide
 - :only
-- :b <Numero>
+- :b <Número>
 - Ctrl + w Ctrl + w
 - Ctrl + w_
 - Ctrl + w=
@@ -218,7 +218,7 @@ Esta parte aún se encuentra en desarrollo...
 - :new
 - :bnext :bn
 - :bprevious :bp
-- :b <Numero> -> Mostrará el buffer en el número indicado.
+- :b <Número> -> Mostrará el buffer en el número indicado.
 - :bd -> Cierra el buffer.
-- :bd <Numero> -> Cierra el buffer indicado.
+- :bd <Número> -> Cierra el buffer indicado.
 - :bd!
