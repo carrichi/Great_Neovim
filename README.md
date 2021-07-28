@@ -5,7 +5,7 @@
 - [Introducción](#introducción)
 - [Modos](#modos)
     - [Normal](#normal)
-	1. [Desplazamiento en el entorno](#desplazamiento-en-el-entorno) 
+	* [Desplazamiento en el entorno](#desplazamiento-en-el-entorno) 
    - [Normal](#normal)
 - [Configuraciones iniciales](#configuraciones-iniciales)
 - [Copiado y pegado de texto](#copiado-y-pegado-de-texto)
