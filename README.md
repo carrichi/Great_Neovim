@@ -2,7 +2,7 @@
 
 ## Temario
 
-1. [Introducción] (#Introducción)
+1. [Introducción] (#introducción)
 2. Desplazamiento en el entorno
 3. Configuraciones iniciales:
     - number
