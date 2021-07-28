@@ -5,8 +5,10 @@
 - [Introducción](#introducción)
 - [Modos](#modos)
     - [Normal](#normal)
-	* [Desplazamiento en el entorno](#desplazamiento-en-el-entorno) 
-   - [Normal](#normal)
+    - [Comando](#comando)
+    - [Insertar](#insertar)
+    - [Reemplazar](#reemplazar)
+    - [Visual](#visual)
 - [Configuraciones iniciales](#configuraciones-iniciales)
 - [Copiado y pegado de texto](#copiado-y-pegado-de-texto)
 - [Operadores y combinaciones](#operadores-y-combinaciones)
@@ -35,11 +37,14 @@ Una de las características especiales de este editor es que se maneja mediante 
 * Modo insertar
 * Modo reemplazar
 
-Se explicarán en profundidad más adelante...
+# Modos
+Dentro del editor de código, podemos disponer de Modos, el cuál cada uno tendrá funciones específicas.
 
-# Desplazamiento en el entorno
-Para poder moverse dentro de Vim o Neovim, únicamente mientras el modo NORMAL está activo.
-Se utilizarán las siguientes teclas:
+## Normal
+En este modo es el que se mantiene activo la mayoría del tiempo y es el modo que siempre está por enmedio del cambio entre un modo y otro. **Cuando este modo se encuentra activo, todas las teclas ejecutan acciones específicas.** 
+
+Entre estas acciones están las teclas de desplazamiento:
+
 - j : Para poder moverse una línea hacia abajo.
 - k : Para poder moverse una línea hacia arriba.
 - h : Para poder moverse un caracter hacia la izquierda.
@@ -65,20 +70,13 @@ Para realizar movimientos muy concretos dentro de una misma línea:
 - t<Caracter> : Da un salto al siguiente caracter ingresado. (Se posiciona por detrás del caracter buscado)
 - T<Caracter> : Moverse al anterior caracter. (Se posiciona por delante del caracter buscado)
 
-# Modos
-Dentro del editor de código, podemos disponer de Modos, el cuál cada uno tendrá funciones específicas.
+Otros comandos que actuan en modo normal:
 
-## Normal
-En este modo es el que se mantiene activo la mayoría del tiempo y es el modo que siempre está por enmedio del cambio entre un modo y otro. **Cuando este modo se encuentra activo, todas las teclas ejecutan acciones específicas.**
-
-Comandos que actuan en modo normal:
 - u : Permite deshacer la última acción realizada.
 - Ctrl + r : Permite re-hacer el último comando realizado.
 - x : Permite "cortar" el contenido del archivo caracter a caracter en la posición ACTUAL del cursor.
 - X : Realiza la misma función que la tecla "x", pero "corta" el caracter ANTERIOR A LA POSICIÓN del cursor.
-- 0 :
-- $ :
-- << o >> : 
+- << o >> : Permite aplicar o quitar una tabulación a la linea en donde se encuentra el cursor.
 
 ## Comando
 Teclas para acceder a modo comando: / ? :
