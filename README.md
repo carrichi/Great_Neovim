@@ -17,7 +17,7 @@
     - [Gestión de ventanas](#Gestión-de-ventanas)
     - [Gestión de buffers](#gestión-de-buffers)
 
-# Introducción [(Volver al temario)](#temario)
+# Introducción
 Aquí va la introducción...
 
 Archivo de configuración: ~/.config/nvim/init.vim
