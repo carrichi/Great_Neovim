@@ -45,23 +45,23 @@ En este modo es el que se mantiene activo la mayoría del tiempo y es el modo qu
 
 Entre estas acciones están las teclas de desplazamiento:
 
-- j : Para poder moverse una línea hacia abajo.
-- k : Para poder moverse una línea hacia arriba.
-- h : Para poder moverse un caracter hacia la izquierda.
-- l : Para poder moverse un caracter hacia la derecha.
-- w : Realiza un salto palabra por palabra.
-- b : Realiza un salto palabra por palabra, pero en sentido inverso.
-- e : Realiza saltos palabra por palabra, pero mediante la última letra de cada palabra.
-- 0 : Realiza un salto al comienzo de la línea.
-- $ : Realiza un salto al fina lde la línea.
-- % : Permite dar saltos entre los caracteres (), [] y {}, siempre saltando a su contraparte (si esta existe).
-- Ctrl + y : Desplaza la pantalla para ver el contenido SUPERIOR.
-- Ctrl + e : Desplaza la pantalla para ver el contenido INFERIOR.
-- Crtl + b ó Shift + Arriba: Desplaza la pantalla en saltos grandes hacia ARRIBA.
-- Ctrl + f ó Shift + Abajo: Desplaza la pantalla en saltos grandes hacia ABAJO.
-- gg : Da un salto al inicio del archivo.
-- G : Da un salto al final del archivo.
-- <Numero>G : Permite moverte a una línea en específico.
+- `j` : Para poder moverse una línea hacia abajo.
+- `k` : Para poder moverse una línea hacia arriba.
+- `h` : Para poder moverse un caracter hacia la izquierda.
+- `l` : Para poder moverse un caracter hacia la derecha.
+- `w` : Realiza un salto palabra por palabra.
+- `b` : Realiza un salto palabra por palabra, pero en sentido inverso.
+- `e` : Realiza saltos palabra por palabra, pero mediante la última letra de cada palabra.
+- `0` : Realiza un salto al comienzo de la línea.
+- `$` : Realiza un salto al fina lde la línea.
+- `%` : Permite dar saltos entre los caracteres (), [] y {}, siempre saltando a su contraparte (si esta existe).
+- `Ctrl + y` : Desplaza la pantalla para ver el contenido SUPERIOR.
+- `Ctrl + e` : Desplaza la pantalla para ver el contenido INFERIOR.
+- `Crtl + b` ó `Shift + Arriba` : Desplaza la pantalla en saltos grandes hacia ARRIBA.
+- `Ctrl + f` ó `Shift + Abajo` : Desplaza la pantalla en saltos grandes hacia ABAJO.
+- `gg` : Da un salto al inicio del archivo.
+- `G` : Da un salto al final del archivo.
+- `<Numero>G` : Permite moverte a una línea en específico.
 
 Para realizar movimientos muy concretos dentro de una misma línea:
 
@@ -76,7 +76,7 @@ Otros comandos que actuan en modo normal:
 - Ctrl + r : Permite re-hacer el último comando realizado.
 - x : Permite "cortar" el contenido del archivo caracter a caracter en la posición ACTUAL del cursor.
 - X : Realiza la misma función que la tecla "x", pero "corta" el caracter ANTERIOR A LA POSICIÓN del cursor.
-- << o >> : Permite aplicar o quitar una tabulación a la linea en donde se encuentra el cursor.
+- << ó >> : Permite aplicar o quitar una tabulación a la linea en donde se encuentra el cursor.
 
 ## Comando
 Teclas para acceder a modo comando: / ? :
