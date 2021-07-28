@@ -46,60 +46,57 @@ En este modo es el que se mantiene activo la mayoría del tiempo y es el modo qu
 Entre estas acciones están las teclas de desplazamiento:
 
 - **`j`** : Para poder moverse una línea hacia abajo.
-- `k` : Para poder moverse una línea hacia arriba.
-- `h` : Para poder moverse un caracter hacia la izquierda.
-- `l` : Para poder moverse un caracter hacia la derecha.
-- `w` : Realiza un salto palabra por palabra.
-- `b` : Realiza un salto palabra por palabra, pero en sentido inverso.
-- `e` : Realiza saltos palabra por palabra, pero mediante la última letra de cada palabra.
-- `0` : Realiza un salto al comienzo de la línea.
-- `$` : Realiza un salto al fina lde la línea.
-- `%` : Permite dar saltos entre los caracteres (), [] y {}, siempre saltando a su contraparte (si esta existe).
-- `Ctrl + y` : Desplaza la pantalla para ver el contenido SUPERIOR.
-- `Ctrl + e` : Desplaza la pantalla para ver el contenido INFERIOR.
-- `Crtl + b` ó `Shift + Arriba` : Desplaza la pantalla en saltos grandes hacia ARRIBA.
-- `Ctrl + f` ó `Shift + Abajo` : Desplaza la pantalla en saltos grandes hacia ABAJO.
-- `gg` : Da un salto al inicio del archivo.
-- `G` : Da un salto al final del archivo.
-- `<Número>G` : Permite moverte a una línea en específico.
+- **`k`** : Para poder moverse una línea hacia arriba.
+- **`h`** : Para poder moverse un caracter hacia la izquierda.
+- **`l`** : Para poder moverse un caracter hacia la derecha.
+- **`w`** : Realiza un salto palabra por palabra.
+- **`b`** : Realiza un salto palabra por palabra, pero en sentido inverso.
+- **`e`** : Realiza saltos palabra por palabra, pero mediante la última letra de cada palabra.
+- **`0`** : Realiza un salto al comienzo de la línea.
+- **`$`** : Realiza un salto al fina lde la línea.
+- **`%`** : Permite dar saltos entre los caracteres (), [] y {}, siempre saltando a su contraparte (si esta existe).
+- **`Ctrl + y`** : Desplaza la pantalla para ver el contenido SUPERIOR.
+- **`Ctrl + e`** : Desplaza la pantalla para ver el contenido INFERIOR.
+- **`Crtl + b`** ó **`Shift + Arriba`** : Desplaza la pantalla en saltos grandes hacia ARRIBA.
+- **`Ctrl + f`** ó **`Shift + Abajo`** : Desplaza la pantalla en saltos grandes hacia ABAJO.
+- **`gg`** : Da un salto al inicio del archivo.
+- **`G`** : Da un salto al final del archivo.
+- **`<Número>G`** : Permite moverte a una línea en específico.
 
 Para realizar movimientos muy concretos dentro de una misma línea:
 
-- `f<Caracter>` : Salto al siguiente caracter ingresado. (Se posiciona por encima del caracter buscado)
-- `F<Caracter>` : Salto al anterior caracter ingresado. (Se posiciona por encima del caracter buscado)
-- `t<Caracter>` : Da un salto al siguiente caracter ingresado. (Se posiciona por detrás del caracter buscado)
-- `T<Caracter>` : Moverse al anterior caracter. (Se posiciona por delante del caracter buscado)
+- **`f<Caracter>`** : Salto al siguiente caracter ingresado. (Se posiciona por encima del caracter buscado)
+- **`F<Caracter>`** : Salto al anterior caracter ingresado. (Se posiciona por encima del caracter buscado)
+- **`t<Caracter>`** : Da un salto al siguiente caracter ingresado. (Se posiciona por detrás del caracter buscado)
+- **`T<Caracter>`** : Moverse al anterior caracter. (Se posiciona por delante del caracter buscado)
 
 Otros comandos que actuan en modo normal:
 
-- `u` : Permite deshacer la última acción realizada.
-- `Ctrl + r` : Permite re-hacer el último comando realizado.
-- `x` : Permite "cortar" el contenido del archivo caracter a caracter en la posición ACTUAL del cursor.
-- `X` : Realiza la misma función que la tecla "x", pero "corta" el caracter ANTERIOR A LA POSICIÓN del cursor.
-- `<<` ó `>>` : Permite aplicar o quitar una tabulación a la linea en donde se encuentra el cursor.
+- **`u`** : Permite deshacer la última acción realizada.
+- **`Ctrl + r`** : Permite re-hacer el último comando realizado.
+- **`x`** : Permite "cortar" el contenido del archivo caracter a caracter en la posición ACTUAL del cursor.
+- **`X`** : Realiza la misma función que la tecla "x", pero "corta" el caracter ANTERIOR A LA POSICIÓN del cursor.
+- **`<<`** ó **`>>`** : Permite aplicar o quitar una tabulación a la linea en donde se encuentra el cursor.
 
 ## Comando
-En este modo se realizan instrucciones específicas como búsquedas o ejecución de comandos en Shell. Para poder acceder a este modo es necesario utilizar las teclas: `/`, `?` ó `:`.
-- :help :h
-- :write
-- :quit
-- :w
-- :q
-- :q!
-- :wq, :x! o ZZ :
-- :n
-- :N
-- :buffers
-    - Lo que indica el #, %a y si esta vacio.
-- :buffer <Número>
+En este modo se realizan instrucciones específicas como búsquedas o ejecución de comandos en Shell. Para poder acceder a este modo es necesario utilizar las teclas: **`/`**, **`?`** ó **`:`**.
+- **`:help`** ó **`:h`** : Permite mostrar el manual de usuario. Pero también permite buscar ayuda para comandos específicos.
+- **`:write`** ó **`:w`** : Guarda el archivo que se está editando actualmente.
+- **`:quit`** ó **`:q`** : Permite salir del editor de texto (sin guardar).
+- **`:q!`** : Forza la salida del editor, incluso si ocurrieron cambios en el archivo.
+- **`:wq`**, **`:x!`** ó **`ZZ`** : Realiza la acción de "Guardar y salir".
+- **`:buffers`** : Permite conocer los archivos que se encuentran abiertos y almacenados en memoria. Saldrá una pequeña dabla en dónde # representa que ya fue abierto el archivo, %a indica que el arhivo se encuentra abierto y modificándose.
+- **`:buffer <Número>`** : Permite cambiar a otro archivo indicando el número asignado en el buffer.
+- **`:N`** : Permite ir al archivo anterior que esté contenido en el buffer.
+- **`:n`** : Permite entrar al siguiente archivo si este existe en el buffer.
 
 Comandos utilizados en situaciones muy específicas:
 
-- :e
-- :r
+- **`:e <Archivo>`** : Añade el contenido del Archivo en la línea donde se encuentra posicionado el cursor.
+- **`:r <Archivo>`** : Inserta el contenido de un fichero en la linea siguiente a la posición del cursor.
 
 Para cualquier comando de Shell:
-- !<Comando de Shell>
+- **`:!<Comando de Shell>`** : Permite ejecutar cualquier comando de Shell, como "ls", "echo", "cat", etc.
 
 ## Insertar
 Teclas que te envian a insertar: i, I, a, A, o, O
