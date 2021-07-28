@@ -2,24 +2,19 @@
 
 ## Temario
 
-1. [Introducción] (#introducción)
-2. Desplazamiento en el entorno
-3. Configuraciones iniciales:
-    - number
-    - mouse 
-    - numberwidth
-    - relativenumber
-4. Copiado y pegado de texto
-5. Operadores
-6. Atajos de teclado
-7. Instalación de gestor de extensiones
-8. Plugins
-    - Esquemas de color
-    - Lightline
-    - Vim-tmux
+# Índice
+- [Introduction] (#introduction)
+- Desplazamiento en el entorno
+- Configuraciones iniciales:
+- Copiado y pegado de texto
+- Operadores
+- Atajos de teclado
+- Instalación de gestor de extensiones
+- Plugins
 
-# Introducción
-Aquí val a introducción.
+# Introduction
+Aquí va la introducción.
+
 # Desplazamiento en el entorno
 # Configuraciones iniciales
 # Copiado y pegado de texto
