@@ -99,7 +99,15 @@ Para cualquier comando de Shell:
 - **`:!<Comando de Shell>`** : Permite ejecutar cualquier comando de Shell, como "ls", "echo", "cat", etc.
 
 ## Insertar
-Teclas que te envian a insertar: i, I, a, A, o, O
+En este modo es en el que se puede escribir directamente en el contenido del archivo, aquí las teclas ya cumplen su función de escribir caracteres. Para salir de este modo se hará uso de la tecla **Esc**.
+Teclas que permiten ingresar al modo Insertar: 
+
+- **`i`** : Para acceder al modo Insertar posicionados ANTES de la última posición del cursor.
+- **`I`** : Para acceder al modo Insertar al INICIO DE TODA LA LÍNEA.
+- **`a`** : Para acceder al modo Insertar posicionados DESPUÉS de la última posición del cursor.
+- **`A`** : Para acceder al modo Insertar al FINAL DE TODA LA LÍNEA.
+- **`o`** : Permite acceder al modo Insertar en una nueva LÍNEA INFERIOR.
+- **`O`** : Permite acceder al modo Insertar en una nueva LÍNEA SUPERIOR.
 
 ## Visual
 Teclas que te ayudan a entrar a visual: v V(V-line)
