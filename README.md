@@ -2,7 +2,7 @@
 
 ## Temario
 
-1. [Introducción a Neovim] (#Introducción a Neovim)
+1. [Introducción] (#Introducción)
 2. Desplazamiento en el entorno
 3. Configuraciones iniciales:
     - number
@@ -18,7 +18,7 @@
     - Lightline
     - Vim-tmux
 
-# Introducción a Neovim
+# Introducción
 Aquí val a introducción.
 # Desplazamiento en el entorno
 # Configuraciones iniciales
