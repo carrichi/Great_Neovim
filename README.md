@@ -3,8 +3,10 @@
 # Temario
 
 - [Introducción](#introducción)
-- [Desplazamiento en el entorno](#desplazamiento-en-el-entorno)
 - [Modos](#modos)
+    - [Normal](#normal)
+	1. [Desplazamiento en el entorno](#desplazamiento-en-el-entorno) 
+   - [Normal](#normal)
 - [Configuraciones iniciales](#configuraciones-iniciales)
 - [Copiado y pegado de texto](#copiado-y-pegado-de-texto)
 - [Operadores y combinaciones](#operadores-y-combinaciones)
@@ -18,45 +20,62 @@
     - [Gestión de buffers](#gestión-de-buffers)
 
 # Introducción
-Aquí va la introducción...
+[Neovim](https://neovim.io/) es un editor de texto de código abierto el cual tiene una mejor compatibilidad y rendimiento ante su sucesor Vi IMprove (Vim).
 
-Archivo de configuración: ~/.config/nvim/init.vim
+A comparación de Vim, Neovim utiliza un archivo de configuración distinto, la ruta a este se encuentra en: 
+
+```
+~/.config/nvim/init.vim
+```
+
+Una de las características especiales de este editor es que se maneja mediante MODOS, los cuales los más representativos son:
+
+* Modo normal
+* Modo comando
+* Modo insertar
+* Modo reemplazar
+
+Se explicarán en profundidad más adelante...
 
 # Desplazamiento en el entorno
-Para poder moverse dentro de Vim o Neovim, se utilizarán las siguientes teclas:
+Para poder moverse dentro de Vim o Neovim, únicamente mientras el modo NORMAL está activo.
+Se utilizarán las siguientes teclas:
 - j : Para poder moverse una línea hacia abajo.
 - k : Para poder moverse una línea hacia arriba.
 - h : Para poder moverse un caracter hacia la izquierda.
 - l : Para poder moverse un caracter hacia la derecha.
-- w :
-- b :
-- e :
-- 0 :
-- $ :
-- % :
-- Ctrl + e :
-- Ctrl + y :
-- Crtl + b :
-- Ctrl + f : 
-- Shift + Arriba :
-- Shift + Abajo :
-- gg :
-- G :
-- <Numero>G : Moverse de linea
-- t<Caracter> : Moverse al siguiente caracter.
-- T<Caracter> : Moverse al anterior caracter.
-- f<Caracter> : Salto al siguiente caracter.
-- F<Caracter> : Salto al anterior caracter.
+- w : Realiza un salto palabra por palabra.
+- b : Realiza un salto palabra por palabra, pero en sentido inverso.
+- e : Realiza saltos palabra por palabra, pero mediante la última letra de cada palabra.
+- 0 : Realiza un salto al comienzo de la línea.
+- $ : Realiza un salto al fina lde la línea.
+- % : Permite dar saltos entre los caracteres (), [] y {}, siempre saltando a su contraparte (si esta existe).
+- Ctrl + y : Desplaza la pantalla para ver el contenido SUPERIOR.
+- Ctrl + e : Desplaza la pantalla para ver el contenido INFERIOR.
+- Crtl + b ó Shift + Arriba: Desplaza la pantalla en saltos grandes hacia ARRIBA.
+- Ctrl + f ó Shift + Abajo: Desplaza la pantalla en saltos grandes hacia ABAJO.
+- gg : Da un salto al inicio del archivo.
+- G : Da un salto al final del archivo.
+- <Numero>G : Permite moverte a una línea en específico.
+
+Para realizar movimientos muy concretos dentro de una misma línea:
+
+- f<Caracter> : Salto al siguiente caracter ingresado. (Se posiciona por encima del caracter buscado)
+- F<Caracter> : Salto al anterior caracter ingresado. (Se posiciona por encima del caracter buscado)
+- t<Caracter> : Da un salto al siguiente caracter ingresado. (Se posiciona por detrás del caracter buscado)
+- T<Caracter> : Moverse al anterior caracter. (Se posiciona por delante del caracter buscado)
 
 # Modos
-Dentro de nuestro entorno existen diferentes modos:
+Dentro del editor de código, podemos disponer de Modos, el cuál cada uno tendrá funciones específicas.
 
 ## Normal
-Comandos que actuan en modo normal: u , Ctrl + r, x, X, 0, $
-- u : 
-- Ctrl + r :
-- x :
-- X :
+En este modo es el que se mantiene activo la mayoría del tiempo y es el modo que siempre está por enmedio del cambio entre un modo y otro. **Cuando este modo se encuentra activo, todas las teclas ejecutan acciones específicas.**
+
+Comandos que actuan en modo normal:
+- u : Permite deshacer la última acción realizada.
+- Ctrl + r : Permite re-hacer el último comando realizado.
+- x : Permite "cortar" el contenido del archivo caracter a caracter en la posición ACTUAL del cursor.
+- X : Realiza la misma función que la tecla "x", pero "corta" el caracter ANTERIOR A LA POSICIÓN del cursor.
 - 0 :
 - $ :
 - << o >> : 
@@ -75,6 +94,11 @@ Teclas para acceder a modo comando: / ? :
 - :buffers
     - Lo que indica el #, %a y si esta vacio.
 - :buffer <Numero>
+
+Comandos utilizados en situaciones muy específicas:
+
+- :e
+- :r
 
 Para cualquier comando de Shell:
 - !<Comando de Shell>
