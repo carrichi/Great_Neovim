@@ -12,12 +12,12 @@
 - [Atajos de teclado] (#atajos-de-teclado)
 - [Extensiones] (#extensiones)
 
-# Introducción
+## Introducción
 Aquí va la introducción.
 
-# Desplazamiento en el entorno
-# Configuraciones iniciales
-# Copiado y pegado de texto
-# Operadores
-# Atajos de teclado
-# Extensiones
+## Desplazamiento en el entorno
+## Configuraciones iniciales
+## Copiado y pegado de texto
+## Operadores
+## Atajos de teclado
+## Extensiones
