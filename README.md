@@ -1,4 +1,4 @@
-# BIENVENIDOS A NEOVIM
+# ¡Bienvenidos a Neovim!
 
 # Temario
 
@@ -12,6 +12,36 @@
 - [Configuraciones avanzadas](#configuraciones-avanzadas)
     - [Atajos de teclado](#atajos-de-teclado)
     - [Extensiones](#extensiones)
+- Proximamente:
+    - Gestion de pestañas.
+	- :tabnew
+	- :+tabnew
+	- :-tabnew
+	- :0tabnew
+	- :$tabnew
+	- :tabm <Posicion>
+	- :tabclose
+	- :tabonly
+	- :tabe <Nombre de archivo>
+    - Gestion de buffers:
+	- :ls
+	- :new
+	- :bnext :bn
+	- :bprevious :bp
+	- :b <Numero> -> Mostrará el buffer en el número indicado.
+	- :bd -> Cierra el buffer.
+	- :bd <Numero> -> Cierra el buffer indicado.
+	- :bd!
+    - Gestión de ventanas:
+	- :split
+	- :vsplit
+	- :hide
+	- :only
+	- :b <Numero>
+	- Ctrl + w Ctrl + w
+	- Ctrl + w_
+	- Ctrl + w=
+	- Ctrl + <flecha>
 
 # Introducción
 Aquí va la introducción.
@@ -36,6 +66,8 @@ Para poder moverse dentro de Vim o Neovim, se utilizarán las siguientes teclas:
 - % :
 - Ctrl + e :
 - Ctrl + y :
+- Crtl + b :
+- Ctrl + f : 
 - Shift + Arriba :
 - Shift + Abajo :
 - gg :
@@ -45,21 +77,37 @@ Para poder moverse dentro de Vim o Neovim, se utilizarán las siguientes teclas:
 - T<Caracter> : Moverse al anterior caracter.
 - f<Caracter> : Salto al siguiente caracter.
 - F<Caracter> : Salto al anterior caracter.
-😂
+
 # Modos
 Dentro de nuestro entorno existen diferentes modos:
 
 ## Normal
 Comandos que actuan en modo normal: u , Ctrl + r, x, X, 0, $
+- u : 
+- Ctrl + r :
+- x :
+- X :
+- 0 :
+- $ :
+- << o >> : 
 
 ## Comando
 Teclas para acceder a modo comando: / ? :
+- :help :h
 - :write
 - :quit
 - :w
 - :q
 - :q!
-- :wq
+- :wq, :x! o ZZ :
+- :n
+- :N
+- :buffers
+    - Lo que indica el #, %a y si esta vacio.
+- :buffer <Numero>
+
+Para cualquier comando de Shell:
+- !<Comando de Shell>
 
 ## Insertar
 Teclas que te envian a insertar: i, I, a, A, o, O
@@ -85,19 +133,16 @@ Teclas que te permiter reemplazar texto:
     * a : Para reemplazar TODAS.
     * q : Para no reemplazar NINGUNA.
     * l : Para reemplazar solo la primera de todas.
-    * Ctrl + e (^E) :
-    * Ctrl + y (^Y) :
+    * Ctrl + e (^E) : Desplazar la pantalla para ver el contexto
+    * Ctrl + y (^Y) : Desplazan la pantalla para ver el contexto
 
 - :%s/<Palabra a buscar>/<Palabra a reemplazar>
-
-# Configuraciones iniciales
-Configuraciones que ya tiene Neovim:
-- Ctrl + g :
 
 # Copiado y pegado de texto
 - s : Que hace
 - p : 
 - P : 
+- yy ó Y : 
 
 # Operadores y combinaciones
 - cw :
@@ -114,9 +159,10 @@ Configuraciones que ya tiene Neovim:
 - db :
 - de :
 - dd :
-- d$ :
+- d$ ó D :
 - d% :
 - d0 :
+- d<Numero><Dirección h,j,k,l> :
 
 ### Faltan mas operadores.
 
@@ -124,6 +170,16 @@ Configuraciones que ya tiene Neovim:
 - /: Cursos en adelante.
 - ?: Antes del cursor.
 - #: Palabra en específico. 
+
+# Configuraciones básicas
+- set number (Habilita los numeros)
+- syntax on (Habilita colores) Creo que ya la tiene.
+- set tabstop=4 (configra el TAB)
+- set autoindent (ya la tiene)
+
+# Configuraciones iniciales
+Configuraciones que ya tiene Neovim:
+- Ctrl + g :
 
 # Configuraciones avanzadas
 ## Multiples archivos
