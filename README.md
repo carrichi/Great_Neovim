@@ -12,45 +12,15 @@
 - [Configuraciones avanzadas](#configuraciones-avanzadas)
     - [Atajos de teclado](#atajos-de-teclado)
     - [Extensiones](#extensiones)
-- Proximamente:
-    - Gestion de pestañas.
-	- :tabnew
-	- :+tabnew
-	- :-tabnew
-	- :0tabnew
-	- :$tabnew
-	- :tabm <Posicion>
-	- :tabclose
-	- :tabonly
-	- :tabe <Nombre de archivo>
-    - Gestion de buffers:
-	- :ls
-	- :new
-	- :bnext :bn
-	- :bprevious :bp
-	- :b <Numero> -> Mostrará el buffer en el número indicado.
-	- :bd -> Cierra el buffer.
-	- :bd <Numero> -> Cierra el buffer indicado.
-	- :bd!
-    - Gestión de ventanas:
-	- :split
-	- :vsplit
-	- :hide
-	- :only
-	- :b <Numero>
-	- Ctrl + w Ctrl + w
-	- Ctrl + w_
-	- Ctrl + w=
-	- Ctrl + <flecha>
+- [Neovim nivel avanzado](#neovim-nivel-avanzado)
+    - [Gestión de pestañas](#gestión-de-pestañas)
+    - [Gestión de ventanas](#Gestión-de-ventanas)
+    - [Gestión de buffers](#gestión-de-buffers)
 
 # Introducción
-Aquí va la introducción.
+Aquí va la introducción...
 
 Archivo de configuración: ~/.config/nvim/init.vim
-Configuracion avanzada:
-    Multiples archivos
-    Atajos de teclado
-    Extenciones
 
 # Desplazamiento en el entorno
 Para poder moverse dentro de Vim o Neovim, se utilizarán las siguientes teclas:
@@ -184,6 +154,7 @@ Configuraciones que ya tiene Neovim:
 # Configuraciones avanzadas
 ## Multiples archivos
 so
+
 ## Atajos de teclado
 <space>w :w
 <space>q :q
@@ -193,3 +164,39 @@ so
 ## Extensiones
 - Nerdtree : m - Mostrar alternativas
 - Navigator : Con el t y moverse con el Ctrl + h, j, k, l
+
+# Neovim nivel avanzado
+
+Esta parte aún se encuentra en desarrollo...
+
+## Gestión de pestañas 
+- :tabnew
+- :+tabnew
+- :-tabnew
+- :0tabnew
+- :$tabnew
+- :tabm <Posicion>
+- :tabclose
+- :tabonly
+- :tabe <Nombre de archivo>
+
+## Gestión de ventanas
+- :split
+- :vsplit
+- :hide
+- :only
+- :b <Numero>
+- Ctrl + w Ctrl + w
+- Ctrl + w_
+- Ctrl + w=
+- Ctrl + <flecha>
+
+## Gestión de buffers
+- :ls
+- :new
+- :bnext :bn
+- :bprevious :bp
+- :b <Numero> -> Mostrará el buffer en el número indicado.
+- :bd -> Cierra el buffer.
+- :bd <Numero> -> Cierra el buffer indicado.
+- :bd!
