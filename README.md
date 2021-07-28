@@ -2,7 +2,7 @@
 
 ## Temario
 
-1. [Introducción a Neovim] (#Introducción)
+1. [Introducción a Neovim] (#Introducción a Neovim)
 2. Desplazamiento en el entorno
 3. Configuraciones iniciales:
     - number
