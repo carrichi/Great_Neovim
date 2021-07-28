@@ -7,10 +7,9 @@
     - [Normal](#normal)
     - [Comando](#comando)
     - [Insertar](#insertar)
-    - [Reemplazar](#reemplazar)
     - [Visual](#visual)
+    - [Reemplazar](#reemplazar)
 - [Configuraciones iniciales](#configuraciones-iniciales)
-- [Copiado y pegado de texto](#copiado-y-pegado-de-texto)
 - [Operadores y combinaciones](#operadores-y-combinaciones)
 - [Búsquedas](#búsquedas)
 - [Configuraciones avanzadas](#configuraciones-avanzadas)
@@ -74,7 +73,7 @@ Otros comandos que actuan en modo normal:
 
 - **`u`** : Permite deshacer la última acción realizada.
 - **`Ctrl + r`** : Permite re-hacer el último comando realizado.
-- **`x`** : Permite "cortar" el contenido del archivo caracter a caracter en la posición ACTUAL del cursor.
+- **`x`** : Permite **CORTAR** el contenido del archivo caracter a caracter en la posición ACTUAL del cursor.
 - **`X`** : Realiza la misma función que la tecla "x", pero "corta" el caracter ANTERIOR A LA POSICIÓN del cursor.
 - **`<<`** ó **`>>`** : Permite aplicar o quitar una tabulación a la linea en donde se encuentra el cursor.
 
@@ -110,18 +109,29 @@ Teclas que permiten ingresar al modo Insertar:
 - **`O`** : Permite acceder al modo Insertar en una nueva LÍNEA SUPERIOR.
 
 ## Visual
-Teclas que te ayudan a entrar a visual: v V(V-line)
-- v :
-- V :
-- Ctrl + v (V-Block) :
-- c :
-- cc :
-- x : Cortar la seleccion
+En este modo se permite seleccionar secciones de texto sin riesgo de modificar el texto. Es principalmente utilizado para sombrear, copiar y cortar contenido del archivo.
+
+Ya teniéndolo activado, cualquier acción de desplazamiento sombreará el texto.
+
+Las teclas para activarlo son:
+
+- **`v`** : Pemite acceder al modo "Visual". 
+- **`V`** : (V - line)
+- **`Ctrl + v`** : (V-Block) 
+- **`y`** : Permite **COPIAR** el texto sombreado.
+- **`x`** : Permite **CORTAR** la seleccion sombreada.
+- **`c`** : Viene de la palabra "change" y permite cambiar directamente del modo Visual al modo Insertar.
+- **`s`** : Viene de la palabra "subsitute" y permite realizar la sustitución directa de texto, tiene un funcionamiento muy parecido a la tecla "x".
+- **`p`** : Viene de la palabra "paste" y permite **pegar** la sección de texto sombreada con el modo visual. Este pegado de texto va DESPUÉS del cursor.
+- **`P`** : Funcionamiento inverso al de "p", ya que este realiza el mismo pegado de texto pero ANTES del cursor.
 
 ## Reemplazar
 Teclas que te permiter reemplazar texto:
 - r : 
 - R : 
+
+Reemplazo de texto a partir de línea de comandos:
+
 - :s/<Palabra a buscar>/<Palabra a reemplazar>
 - :s/<Palabra a buscar>/<Palabra a reemplazar>/g
 - :s/<Palabra a buscar>/<Palabra a reemplazar>/gc : Preguntando confirmacion
@@ -135,18 +145,14 @@ Teclas que te permiter reemplazar texto:
 
 - :%s/<Palabra a buscar>/<Palabra a reemplazar>
 
-# Copiado y pegado de texto
-- s : Que hace
-- p : 
-- P : 
-- yy ó Y : 
-
 # Operadores y combinaciones
 - cw :
 - ciw : 
 - dw : 
 - <Número>
 - v% :
+- **`yy`** ó **`Y`** : 
+- **`cc`** : Permite cambiar el contenido de una LÍNEA COMPLETA, por lo que elimina todo el contenido de una línea y cambia directamente a modo Insertar.
 
 ## Operador "v"
 - <Número>v : Numero de palabras seleccionadas.
