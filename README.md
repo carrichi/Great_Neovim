@@ -3,6 +3,7 @@
 ## Temario
 
 # Índice
+
 - [Introducción] (#introducción)
 - [Desplazamiento en el entorno] (#desplazamiento-en-el-entorno)
 - [Configuraciones iniciales] (#configuraciones-iniciales)
