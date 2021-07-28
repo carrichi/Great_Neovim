@@ -41,7 +41,11 @@ Para poder moverse dentro de Vim o Neovim, se utilizarán las siguientes teclas:
 - gg :
 - G :
 - <Numero>G : Moverse de linea
-
+- t<Caracter> : Moverse al siguiente caracter.
+- T<Caracter> : Moverse al anterior caracter.
+- f<Caracter> : Salto al siguiente caracter.
+- F<Caracter> : Salto al anterior caracter.
+😂
 # Modos
 Dentro de nuestro entorno existen diferentes modos:
 
@@ -64,6 +68,7 @@ Teclas que te envian a insertar: i, I, a, A, o, O
 Teclas que te ayudan a entrar a visual: v V(V-line)
 - v :
 - V :
+- Ctrl + v (V-Block) :
 - c :
 - cc :
 - x : Cortar la seleccion
