@@ -234,16 +234,26 @@ Después de realizar las búsquedas, saldrán sombreadas las coincidencias, pera
 
 - **`set number`** (Habilita los numeros)
 - **`syntax on`** (Habilita colores) Creo que ya la tiene.
+- **`syntax enable`** (Habilita colores) Creo que ya la tiene.
 - **`set tabstop=4`** (configra el TAB)
 - **`set autoindent`** (ya la tiene)
 - **`set clipboard=unamedplus`**
 - **`set relativenumber`**
+- **`set mouse=a`**
+- **`set numberwidth=<N>`**
+- **`set showcmd`**
+- **`set ruler`**
+- **`set cursorline`**
+- **`set encoding=utf-8`**
+- **`set showmatch`**
+- **`set sw=4`**
+- **`set noshowmode`**
 
 # Configuraciones avanzadas
 
 ## Multiples archivos
 
-- **`so`**
+- **`so <Ruta a archivo>`**
 
 ## Atajos de teclado
 
@@ -254,8 +264,84 @@ Después de realizar las búsquedas, saldrán sombreadas las coincidencias, pera
 
 ## Extensiones
 
-- Nerdtree : m - Mostrar alternativas
-- Navigator : Con el t y moverse con el Ctrl + h, j, k, l
+Al igual que muchos otros editores de texto, a Neovim se le pueden agregar extensiones para que resulte ser una herramienta más completa.
+
+Para aplicar instalar extensiones es necesario utilizar un gestor de extensiones, en esta guía se utilizará el gestor **Vim-Plug**.
+
+Para instalarlo has click [aquí](https://github.com/junegunn/vim-plug).
+
+Después de haber instalado el gestor, tendremos a nuestra disposición nuevos comandos en el editor, algunos de estos son:
+
+- **`:PlugInstall`** : Permite instalar las extensiones descritas en nuestro archivo de configuración.
+- **`:PlugClean`** : Elimina las carpetas de las extensiones que no son utilizadas.
+- **`:PlugUpdate`** : Para buscar actualizaciones de las extenciones utilizadas.
+
+Para empezar a instalar extensiones se deben agregar las siguientes líneas a nuestro archivo de configuración:
+
+```
+call plug#begin('<Ruta a carpeta que guardará la información de los plugins>')
+
+Plug '<autor>/<nombre del plugin>'
+
+call plug#end()
+```
+
+Después de haber indicado las extensiones a utilizar deberá utilizarse el comando **`:PlugInstall`** y ¡listo! Las extensiones se encuentran listas para utilizar.
+
+#### Esquemas de color
+
+Dentro del editor de código es posible cambiar los esquemas de color y para realizar este cambio es necesario añadir la siguiente sentencia al archivo de configuración principal (init.vim):
+
+- **`colorscheme <nombre>`**
+
+Para algunos esquemas de color será requerido contar con una terminal de 256 colores, por lo tanto, se recomienda añadir lo siguiente:
+
+```
+if (has("nvim"))
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+endif
+
+if (has("termguicolors"))
+    set termguicolors
+endif
+```
+
+Esquemas recomendados:
+
+- 'joshdick/[onedark]().vim'
+- 'articicestudio/[nord-vim]()'
+- 'cocopon/[iceberg]().vim'
+
+#### Barra flotante de información
+
+- **Lightline** : Integra una barra de información en el editor.
+
+- 'itchyny/[lightline.vim](https://github.com/itchyny/lightline.vim)' :  
+
+Complementos:
+
+- 'dense-analysis/[ale](https://github.com/dense-analysis/ale)' : 
+- 'maximbaz/[lightline-ale](https://github.com/maximbaz/lightline-ale)' : 
+- 'hallzy/[lightline-onedark](https://github.com/hallzy/lightline-onedark)' : theme
+
+#### Visor de archivos
+
+- **Nerdtree** : 
+
+- 'preservim/[nerdtree](https://github.com/preservim/nerdtree)'
+
+Opciones
+m - Mostrar alternativas
+
+#### Pantalla dividida
+
+- **Navigator** : Con el t y moverse con el Ctrl + h, j, k, l
+
+- 'christoomey/[vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)' :
+
+#### Uso de Git
+
+- 'tpope/[vim-fugitive](https://github.com/tpope/vim-fugitive)' :
 
 # Neovim nivel avanzado
 
