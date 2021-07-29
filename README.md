@@ -57,10 +57,12 @@ En este modo es el que se mantiene activo la mayoría del tiempo y es el modo qu
 
 Entre estas acciones están las teclas de desplazamiento:
 
-- **`j`** : Para poder moverse una línea hacia abajo.
+- **`j`** : Para poder moverse una línea hacia abajo. 
 - **`k`** : Para poder moverse una línea hacia arriba.
 - **`h`** : Para poder moverse un caracter hacia la izquierda.
+- **`H`** : Para poder moverse a la primera línea visible en la pantalla.
 - **`l`** : Para poder moverse un caracter hacia la derecha.
+- **`L`** : Para poder moverse a la última línea visible en la pantalla.
 - **`w`** : Realiza un salto palabra por palabra.
 - **`b`** : Realiza un salto palabra por palabra, pero en sentido inverso.
 - **`e`** : Realiza saltos palabra por palabra, pero mediante la última letra de cada palabra.
@@ -232,28 +234,39 @@ Después de realizar las búsquedas, saldrán sombreadas las coincidencias, pera
 
 # Configuraciones básicas
 
+Son utilizadas para indicar configuraciones específicas que quieres que se cargen cada que se abre el editor:
+
+### Configuraciones que ya tiene por defecto Neovim 
+
+- **`syntax enable`** : Habilita el reconocimiento de sintaxis para diferentes lenguajes, lo cual permite activar los colores.
+- **`set autoindent`** : Permite añadir el autoidentado.
+- **`set showcmd`** : Permite ver los comandos escritos en el modo Comando.
+- **`set encoding=utf-8`** : Para indicar una codificación que soporte Unicode.
+- **`set showmatch`** : Para indicar las coincidencias en las búsquedas.
+- **`set ruler`** : Permite ver la posición del cursor en la barra de estado de la forma \<Num. renglon>:\<Num. columna>. Ej: 15:20, quiere decir que el cursor se encuentra en la línea 15 y en la columna número 20.
+
+### Configuraciones que no se encuentran habilitadas por defecto
+
 - **`set number`** : Habilita los numeros de línea del lado izquierdo del editor.
-- **`syntax on`** : Habilita el reconocimiento de sintaxis para diferentes lenguajes, lo cual permite activar los colores. *
-- **`syntax enable`** : Realiza el mismo funcionamiento que "syntax on". * 
 - **`set tabstop=4`** : Permite configurar la cantidad de expacios en la tabulación.
 - **`set sw=4`** : Para indicar la cantidad de renglones para la tabulación (sangría).
-- **`set autoindent`** : Permite añadir el autoidentado. *
 - **`set clipboard=unamedplus`** : Permite compartir el copiado y cortado de texto con el del sistema operativo.
 - **`set relativenumber`** : Añade los números relativos para indicar el número de líneas de distancia desde la línea actual. Es utilizada esta opción para realizar saltos.
 - **`set mouse=a`** : Para activar el reconocimiento del ratón dentro del editor.
 - **`set numberwidth=<N>`** : Permite añadir una cantidad N de espacios entre el contenido del archivo y los números del lado izquierdo.
-- **`set showcmd`** : Permite ver los comandos escritos en el modo Comando. **
-- **`set ruler`** : 
 - **`set cursorline`** : Añade una línea horizontal a la linea activa para identificarla.
-- **`set encoding=utf-8`** : Para indicar una codificación en el editor. *
-- **`set showmatch`** : Para indicar las coincidencias en las búsquedas. *
 - **`set noshowmode`** : Configuración para que no se muestre el modo que se encuentra activo.
+
 
 # Configuraciones avanzadas
 
 ## Multiples archivos
 
-- **`so <Ruta a archivo>`**
+Para crear una configuración muy personalizada y modular, es posible dividir el archivo de configuración en más de un archivo. Para lograr esto en el archivo principal (init.vim) podemos utilizar la siguiente sentencia:
+
+```vim
+so <Ruta a archivo>
+```
 
 ## Atajos de teclado
 
