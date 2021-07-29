@@ -135,9 +135,12 @@ existen 2 teclas que permiten reemplazar caracteres:
 
 en el editor de texto, también se pueden realizar el remplazo de caracteres a partir de línea de comandos:
 
-- :s/\<palabra a buscar\>/\<palabra a reemplazar\>
-- :s/\<palabra a buscar\>/\<palabra a reemplazar\>/g
-- :s/\<palabra a buscar\>/\<palabra a reemplazar\>/gc : preguntando confirmacion
+- :s/\<Palabra a buscar\>/\<Palabra a reemplazar\>
+
+
+
+- :s/\<Palabra a buscar\>/\<Palabra a reemplazar\>/g
+- :s/\<Palabra a buscar\>/\<Palabra a reemplazar\>/gc : preguntando confirmacion
     * y : para reemplazar la coincidencia sombreada.
     * n : para no reemplazar la coincidencia.
     * a : para reemplazar todas.
