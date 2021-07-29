@@ -350,56 +350,33 @@ endif
 
 Esquemas recomendados:
 
-- [Onedark](https://github.com/joshdick/onedark.vim)
+- [**Onedark**](https://github.com/joshdick/onedark.vim) : Para instalar la extensión usa ``'joshdick/onedark.vim'``.
 
-Para utilizarlo se escribiría como extensión lo siguiente: 'joshdick/onedark.vim'
+- [**Nord**](https://github.com/arcticicestudio/nord-vim) : Para instalar la extensión usa ``'articicestudio/nord-vim'``.
 
-- [Nord](https://github.com/arcticicestudio/nord-vim)
-
-Para utilizarlo se escribiría como extensión lo siguiente: 'articicestudio/nord-vim'
-
-- [Iceberg](https://github.com/cocopon/iceberg.vim)
-
-Para utilizarlo se escribiría como extensión lo siguiente: 'cocopon/iceberg.vim'
+- [**Iceberg**](https://github.com/cocopon/iceberg.vim) : Para instalar la extensión usa ``'cocopon/iceberg.vim'``.
 
 #### Barra flotante de información
 
-- **Lightline** : Integra una barra flotante de información en el editor.
+- [**Lightline**](https://github.com/itchyny/lightline.vim) : Integra una barra flotante de información en el editor. Para instalarlo utiliza: ``'itchyny/[lightline.vim]'``
 
-- 'itchyny/[lightline.vim](https://github.com/itchyny/lightline.vim)' :  
+##### Complementos para la barra flotante:
 
-Complementos para la barra flotante:
+- [**Lightline-onedark**](https://github.com/hallzy/lightline-onedark) : Extensión para indicar un nuevo esquema de colores a la barra flotante. Para instalar utiliza: ``'hallzy/lightline-onedark'``
 
-- [**Lightline-onedark**](https://github.com/hallzy/lightline-onedark) : Extensión para indicar un nuevo esquema de colores a la barra flotante.
+- [**Ale**](https://github.com/dense-analysis/ale) : Extensión que permite mostrar errores en código. Para instalar utiliza: ``'dense-analysis/ale'``
 
-Para utilizarlo se escribiría como extensión lo siguiente: 'hallzy/lightline-onedark'
+- [**Lightline-ale**](https://github.com/maximbaz/lightline-ale) : Soporte de la extención "Ale" para que muestre errores o advertencias desde la barra flotante. Para instalar utiliza: ``'maximbaz/lightline-ale'``
 
-- [**Ale**](https://github.com/dense-analysis/ale) : Extensión que permite mostrar errores en código.
-
-Para utilizarlo se escribiría como extensión lo siguiente: 'dense-analysis/ale'
-
-- [**Lightline-ale**](https://github.com/maximbaz/lightline-ale) : Soporte de la extención "Ale" para que muestre errores o advertencias desde la barra flotante.
-
-Para utilizarlo se escribiría como extensión lo siguiente: 'maximbaz/lightline-ale'
-
-- [**Vim-fugitive**](https://github.com/tpope/vim-fugitive) :
-
-Para utilizarlo se escribiría como extensión lo siguiente: 'tpope/vim-fugitive'
+- [**Vim-fugitive**](https://github.com/tpope/vim-fugitive) : Una extensión de la que se puede obtener información de Git, como la rama actual, etc. Para instalar utiliza: ``'tpope/vim-fugitive'``
 
 #### Visor de archivos
 
-- [**Nerdtree**](https://github.com/preservim/nerdtree) : Permite mostrar la jerarquía de archivos desde el editor de código.
-
-Para utilizarlo se escribiría como extensión lo siguiente: 'preservim/nerdtree'
-
-Opciones
-m - Mostrar alternativas
+- [**Nerdtree**](https://github.com/preservim/nerdtree) : Permite mostrar la jerarquía de archivos desde el editor de código. Para utilizarlo instala la extensión utilizando lo siguiente: ``'preservim/nerdtree'``
 
 #### Pantalla dividida
 
-- **Navigator** : Con el t y moverse con el Ctrl + h, j, k, l
-
-- 'christoomey/[vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)' :
+- [**Navigator**](https://github.com/christoomey/vim-tmux-navigator): Permite utilizar varios archivos al mismo tiempo dividiendo la pantalla y moviendose entre archivos de forma fácil. Para instalar: ``'christoomey/vim-tmux-navigator'``
 
 # Neovim nivel avanzado
 
