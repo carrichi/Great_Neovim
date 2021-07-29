@@ -268,12 +268,41 @@ Para crear una configuración muy personalizada y modular, es posible dividir el
 so <Ruta a archivo>
 ```
 
+Aquí un ejemplo:
+
+```vim
+so $HOME/.config/nvim/configuraciones/teclas.vim
+```
+
 ## Atajos de teclado
 
-**`<space>w :w`**
-**`<space>q :q`**
-**`<space>n :noh`**
-**`<space>t :nerdtree`**
+Dentro de nuestro editor podemos crear atajos de teclados personalizados que realicen algún comando en específico. 
+
+Una forma sencilla de hacer esto es declarando una tecla "líder" y después indicando el comando que ejecutará:
+
+```vim
+" Aquí se está indicando que al presionar la tecla espacio durante el modo normal se activará como una tecla modificadora.
+
+let mapleader=" "
+```
+
+Para crear un comando personalizado se utilizará la siguiente sintaxis:
+
+```vim
+nmap <Combinación de teclas a utilizar> <Comando a ejecutar>
+```
+
+Aquí unos atajos recomendados:
+
+```vim
+nmap <Leader>w :w<CR>
+
+nmap <Leader>q :q<CR>
+
+nmap <Leader>n :noh<CR>
+```
+
+En dónde ``<Leader>`` y ``<CR>`` representan la tecla líder declarada y un **enter** respectivamente.
 
 ## Extensiones
 
