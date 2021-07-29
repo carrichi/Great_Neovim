@@ -118,45 +118,45 @@ Las teclas para activarlo son:
 - **`v`** : Pemite acceder al modo "Visual". 
 - **`V`** : Puede identificarse como un "sub-modo" llamado V-line y permite sombrear mediante líneas de código completas.
 - **`Ctrl + v`** : (V-block) 
-- **`y`** : permite **copiar** el texto sombreado.
-- **`x`** : permite **cortar** la seleccion sombreada.
-- **`c`** : viene de la palabra "change" y permite cambiar directamente del modo visual al modo insertar.
-- **`s`** : viene de la palabra "subsitute" y permite realizar la sustitución directa de texto, tiene un funcionamiento muy parecido a la tecla "x".
+- **`y`** : Permite **copiar** el texto sombreado.
+- **`x`** : Permite **cortar** la seleccion sombreada.
+- **`c`** : Viene de la palabra "change" y permite cambiar directamente del modo visual al modo insertar.
+- **`s`** : Viene de la palabra "subsitute" y permite realizar la sustitución directa de texto, tiene un funcionamiento muy parecido a la tecla "x".
 - **`p`** : viene de la palabra "paste" y permite **pegar** la sección de texto sombreada con el modo visual. este pegado de texto va después del cursor.
-- **`p`** : funcionamiento inverso al de "p", ya que este realiza el mismo pegado de texto pero antes del cursor.
+- **`p`** : Funcionamiento inverso al de "p", ya que este realiza el mismo pegado de texto pero antes del cursor.
 
 ## Reemplazar
 este modo es muy parecido al modo "insertar" pero a diferencia de este, cualquier tecla va a estar **reemplazando** al caracter en el que se encuentre posicionado el cursor.
 
 existen 2 teclas que permiten reemplazar caracteres:
 
-- r : permite reemplazar un solo caracter en la posición donde se encuentre el cursor.
-- r : permite acceder al modo reemplazar y estará reemplanzando todos los caracteres hasta que se decida salir del modo con la tecla **esc**.
+- **`r`** : Permite reemplazar un solo caracter en la posición donde se encuentre el cursor.
+- **`r`** : Permite acceder al modo reemplazar y estará reemplanzando todos los caracteres hasta que se decida salir del modo con la tecla **esc**.
 
-en el editor de texto, también se pueden realizar el remplazo de caracteres a partir de línea de comandos:
+En el editor de texto, también se pueden realizar el remplazo de caracteres a partir de línea de comandos:
 
-- :s/\<Palabra a buscar\>/\<Palabra a reemplazar\>
+- **`:s/\<Palabra a buscar\>/\<Palabra a reemplazar\>`** : Siguiendo la sintaxis reemplazará LA PRIMER coincidencia que se encuentre en LA LINEA ACTUAL del cursor.
+- **`:s/\<Palabra a buscar\>/\<Palabra a reemplazar\>/g`** : Con esta sintaxis se remplazarán TODAS las coincidencias en LA LÍNEA ACTUAL.
+- **`:s/\<Palabra a buscar\>/\<Palabra a reemplazar\>/gc`** : Este comando permite reemplazar TODAS las incidencias en la mima línea pero pregunta que se realizará una a una.
 
+Las acciones que se encontrarán para elegir para cada coincidencia son:
 
+    * **`y`** : Para reemplazar la coincidencia sombreada.
+    * **`n`** : Para no reemplazar la coincidencia.
+    * **`a`** : Para reemplazar todas.
+    * **`q`** : Para no reemplazar ninguna.
+    * **`l`** : Para reemplazar solo la primera de todas.
 
-- :s/\<Palabra a buscar\>/\<Palabra a reemplazar\>/g
-- :s/\<Palabra a buscar\>/\<Palabra a reemplazar\>/gc : preguntando confirmacion
-    * y : para reemplazar la coincidencia sombreada.
-    * n : para no reemplazar la coincidencia.
-    * a : para reemplazar todas.
-    * q : para no reemplazar ninguna.
-    * l : para reemplazar solo la primera de todas.
-    * ctrl + e (^e) : Desplazar la pantalla para ver el contexto
-    * Ctrl + y (^Y) : Desplazan la pantalla para ver el contexto
-
-- :%s/<Palabra a buscar>/<Palabra a reemplazar>
+- **`:%s/<Palabra a buscar>/<Palabra a reemplazar>`** : Realiza el mismo proceso que los comandos anteriores, pero este estará buscando las coincidencias en TODO EL ARCHIVO.
 
 # Operadores y combinaciones
-- cw :
-- ciw : 
-- dw : 
-- <Número>
-- v% :
+Algo muy especial de Vim o Neovim es que este permite utilizar los "comandos" de las teclas como operadores, los cuales pueden ser "unidos" para combinar el comportamiento de cada tecla y también pueden ser "multiplicados" por números para repetir cierta cantidad de veces un mismo comando.
+
+- **`cw`** :
+- **`ciw`** : 
+- **`dw`** : 
+- **`<Número>`**
+- **`v%`** :
 - **`yy`** ó **`Y`** : 
 - **`cc`** : Permite cambiar el contenido de una LÍNEA COMPLETA, por lo que elimina todo el contenido de una línea y cambia directamente a modo Insertar.
 
