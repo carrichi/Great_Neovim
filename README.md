@@ -201,26 +201,34 @@ Combinaciones para sombrear contenido de forma más rápida.
 
 ## Combinaciones con la tecla "d"
 
-- **`dw`** : 
-- **`dw`** :
-- **`db`** :
-- **`de`** :
-- **`d$`** ó **`D`** :
-- **`d%`** :
-- **`d0`** :
-- **`dd`** :
-- **`<Número>dd`** :
- **`d<Número><Dirección h,j,k,l>`** :
+- **`dw`** : Significa "Delete word" y su función es eliminar palabras del cursor en ADELANTE.
+- **`<N>dw`** : Al igual que el comando "dw" pero realizando una repetición de N veces.
+- **`db`** : Permite eliminar palabras en función de los saltos que realiza el comando "b".
+- **`de`** : Permite eliminar palabras en función de los saltos que realiza el comando "e".
+- **`d$`** ó **`D`** : Esta combinación permite eliminar el contenido de una línea desde el cursor hasta EL FINAL DE LA LÍNEA.
+- **`d0`** : Permite eliminar el contenido desde el cursor hasta EL COMIENZO de la línea.
+- **`d%`** : Permite eliminar el contenido desde el cursor hasta el paréntesis, conchete o llave más cercana. SOLO SI EXISTE SU CONTRAPARTE.
+- **`dd`** : Permite cortar una LÍNEA COMPLETA.
+- **`<N>dd`** : Permite cortar N líneas completas.
+- **`d<N><Dirección h,l>`** : Permite eliminar N caracteres en la dirección ingresada.
+- **`d<N><Dirección j,k>`** : Permite eliminar N+1 líneas en la dirección ingresada. Contando la línea que contiene al cursor.
 
 ## Combinaciones con la tecla "y"
 
-- **`yy`** ó **`Y`** : 
+- **`yy`** ó **`Y`** : Permite copiar una línea entera, la línea que contiene al cursor.
+- **`<N>yy`** ó **`<N>Y`** : Permite copiar N líneas. De la línea que contiene al cursor HACIA ABAJO.
 
 # Búsquedas
 
-- **`/`**: Cursos en adelante.
-- **`?`**: Antes del cursor.
-- **`#`**: Palabra en específico. 
+En todo editor de texto es necesario buscar palabras, para realizarlas en Vim o Neovim se tienen 3 alternativas:
+
+- **`/`**: Permite realizar búsquedas desde la línea del cursor y su primer coincidencia la buscará por DEBAJO de la línea del cursor.
+- **`?`**: Permite realizar búsquedas desde la línea del cursor y su primer coincidencia la buscará por ENCIMA de la línea del cursor.
+- **`#`**: Sombrea la palabra en la que se encuentre el cursor y muestra sus coincidencias.
+
+Después de realizar las búsquedas, saldrán sombreadas las coincidencias, pera moverse sobre los resultados se utilizan los siguientes comandos:
+- **`n`**: Permite saltar al siguiente resultado.
+- **`N`**: Permite saltar al resultado anterior.
 
 # Configuraciones básicas
 
