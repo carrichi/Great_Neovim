@@ -350,11 +350,11 @@ endif
 
 Esquemas recomendados:
 
-- [**Onedark**](https://github.com/joshdick/onedark.vim) : Para instalar la extensión usa ``'joshdick/onedark.vim'``.
+- [**Onedark**](https://github.com/joshdick/onedark.vim) : Para instalar la extensión usa ``'joshdick/onedark.vim'``
 
-- [**Nord**](https://github.com/arcticicestudio/nord-vim) : Para instalar la extensión usa ``'articicestudio/nord-vim'``.
+- [**Nord**](https://github.com/arcticicestudio/nord-vim) : Para instalar la extensión usa ``'articicestudio/nord-vim'``
 
-- [**Iceberg**](https://github.com/cocopon/iceberg.vim) : Para instalar la extensión usa ``'cocopon/iceberg.vim'``.
+- [**Iceberg**](https://github.com/cocopon/iceberg.vim) : Para instalar la extensión usa ``'cocopon/iceberg.vim'``
 
 #### Barra flotante de información
 
