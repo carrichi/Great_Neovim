@@ -13,6 +13,7 @@
 - [Búsquedas](#búsquedas)
 - [Configuraciones básicas](#configuraciones-básicas)
 - [Configuraciones avanzadas](#configuraciones-avanzadas)
+    - [Multiples archivos](#multiples-archivos)
     - [Atajos de teclado](#atajos-de-teclado)
     - [Extensiones](#extensiones)
 - [Neovim nivel avanzado](#neovim-nivel-avanzado)
