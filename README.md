@@ -278,7 +278,7 @@ Después de haber instalado el gestor, tendremos a nuestra disposición nuevos c
 
 Para empezar a instalar extensiones se deben agregar las siguientes líneas a nuestro archivo de configuración:
 
-```
+```vim
 call plug#begin('<Ruta a carpeta que guardará la información de los plugins>')
 
 Plug '<autor>/<nombre del plugin>'
