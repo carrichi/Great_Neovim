@@ -222,32 +222,32 @@ Combinaciones para sombrear contenido de forma más rápida.
 
 En todo editor de texto es necesario buscar palabras, para realizarlas en Vim o Neovim se tienen 3 alternativas:
 
-- **`/`**: Permite realizar búsquedas desde la línea del cursor y su primer coincidencia la buscará por DEBAJO de la línea del cursor.
-- **`?`**: Permite realizar búsquedas desde la línea del cursor y su primer coincidencia la buscará por ENCIMA de la línea del cursor.
-- **`#`**: Sombrea la palabra en la que se encuentre el cursor y muestra sus coincidencias.
+- **`/`** : Permite realizar búsquedas desde la línea del cursor y su primer coincidencia la buscará por DEBAJO de la línea del cursor.
+- **`?`** : Permite realizar búsquedas desde la línea del cursor y su primer coincidencia la buscará por ENCIMA de la línea del cursor.
+- **`#`** : Sombrea la palabra en la que se encuentre el cursor y muestra sus coincidencias.
 
 Después de realizar las búsquedas, saldrán sombreadas las coincidencias, pera moverse sobre los resultados se utilizan los siguientes comandos:
-- **`n`**: Permite saltar al siguiente resultado.
-- **`N`**: Permite saltar al resultado anterior.
+- **`n`** : Permite saltar al siguiente resultado.
+- **`N`** : Permite saltar al resultado anterior.
 
 # Configuraciones básicas
 
-- **`set number`** (Habilita los numeros)
-- **`syntax on`** (Habilita colores) Creo que ya la tiene.
-- **`syntax enable`** (Habilita colores) Creo que ya la tiene.
-- **`set tabstop=4`** (configra el TAB)
-- **`set autoindent`** (ya la tiene)
-- **`set clipboard=unamedplus`**
-- **`set relativenumber`**
-- **`set mouse=a`**
-- **`set numberwidth=<N>`**
-- **`set showcmd`**
-- **`set ruler`**
-- **`set cursorline`**
-- **`set encoding=utf-8`**
-- **`set showmatch`**
-- **`set sw=4`**
-- **`set noshowmode`**
+- **`set number`** : Habilita los numeros de línea del lado izquierdo del editor.
+- **`syntax on`** : Habilita el reconocimiento de sintaxis para diferentes lenguajes, lo cual permite activar los colores. *
+- **`syntax enable`** : Realiza el mismo funcionamiento que "syntax on". * 
+- **`set tabstop=4`** : Permite configurar la cantidad de expacios en la tabulación.
+- **`set sw=4`** : Para indicar la cantidad de renglones para la tabulación (sangría).
+- **`set autoindent`** : Permite añadir el autoidentado. *
+- **`set clipboard=unamedplus`** : Permite compartir el copiado y cortado de texto con el del sistema operativo.
+- **`set relativenumber`** : Añade los números relativos para indicar el número de líneas de distancia desde la línea actual. Es utilizada esta opción para realizar saltos.
+- **`set mouse=a`** : Para activar el reconocimiento del ratón dentro del editor.
+- **`set numberwidth=<N>`** : Permite añadir una cantidad N de espacios entre el contenido del archivo y los números del lado izquierdo.
+- **`set showcmd`** : Permite ver los comandos escritos en el modo Comando. **
+- **`set ruler`** : 
+- **`set cursorline`** : Añade una línea horizontal a la linea activa para identificarla.
+- **`set encoding=utf-8`** : Para indicar una codificación en el editor. *
+- **`set showmatch`** : Para indicar las coincidencias en las búsquedas. *
+- **`set noshowmode`** : Configuración para que no se muestre el modo que se encuentra activo.
 
 # Configuraciones avanzadas
 
