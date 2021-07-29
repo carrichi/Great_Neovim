@@ -123,7 +123,7 @@ Las teclas para activarlo son:
 - **`c`** : Viene de la palabra "change" y permite cambiar directamente del modo visual al modo insertar.
 - **`s`** : Viene de la palabra "subsitute" y permite realizar la sustitución directa de texto, tiene un funcionamiento muy parecido a la tecla "x".
 - **`p`** : viene de la palabra "paste" y permite **pegar** la sección de texto sombreada con el modo visual. este pegado de texto va después del cursor.
-- **`p`** : Funcionamiento inverso al de "p", ya que este realiza el mismo pegado de texto pero antes del cursor.
+- **`P`** : Funcionamiento inverso al de "p", ya que este realiza el mismo pegado de texto pero antes del cursor.
 
 ## Reemplazar
 este modo es muy parecido al modo "insertar" pero a diferencia de este, cualquier tecla va a estar **reemplazando** al caracter en el que se encuentre posicionado el cursor.
