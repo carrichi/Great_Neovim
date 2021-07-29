@@ -116,31 +116,34 @@ Ya teniéndolo activado, cualquier acción de desplazamiento sombreará el texto
 Las teclas para activarlo son:
 
 - **`v`** : Pemite acceder al modo "Visual". 
-- **`V`** : (V - line)
-- **`Ctrl + v`** : (V-Block) 
-- **`y`** : Permite **COPIAR** el texto sombreado.
-- **`x`** : Permite **CORTAR** la seleccion sombreada.
-- **`c`** : Viene de la palabra "change" y permite cambiar directamente del modo Visual al modo Insertar.
-- **`s`** : Viene de la palabra "subsitute" y permite realizar la sustitución directa de texto, tiene un funcionamiento muy parecido a la tecla "x".
-- **`p`** : Viene de la palabra "paste" y permite **pegar** la sección de texto sombreada con el modo visual. Este pegado de texto va DESPUÉS del cursor.
-- **`P`** : Funcionamiento inverso al de "p", ya que este realiza el mismo pegado de texto pero ANTES del cursor.
+- **`V`** : Puede identificarse como un "sub-modo" llamado V-line y permite sombrear mediante líneas de código completas.
+- **`Ctrl + v`** : (V-block) 
+- **`y`** : permite **copiar** el texto sombreado.
+- **`x`** : permite **cortar** la seleccion sombreada.
+- **`c`** : viene de la palabra "change" y permite cambiar directamente del modo visual al modo insertar.
+- **`s`** : viene de la palabra "subsitute" y permite realizar la sustitución directa de texto, tiene un funcionamiento muy parecido a la tecla "x".
+- **`p`** : viene de la palabra "paste" y permite **pegar** la sección de texto sombreada con el modo visual. este pegado de texto va después del cursor.
+- **`p`** : funcionamiento inverso al de "p", ya que este realiza el mismo pegado de texto pero antes del cursor.
 
 ## Reemplazar
-Teclas que te permiter reemplazar texto:
-- r : 
-- R : 
+este modo es muy parecido al modo "insertar" pero a diferencia de este, cualquier tecla va a estar **reemplazando** al caracter en el que se encuentre posicionado el cursor.
 
-Reemplazo de texto a partir de línea de comandos:
+existen 2 teclas que permiten reemplazar caracteres:
 
-- :s/<Palabra a buscar>/<Palabra a reemplazar>
-- :s/<Palabra a buscar>/<Palabra a reemplazar>/g
-- :s/<Palabra a buscar>/<Palabra a reemplazar>/gc : Preguntando confirmacion
-    * y : Para reemplazar la coincidencia sombreada.
-    * n : Para NO reemplazar la coincidencia.
-    * a : Para reemplazar TODAS.
-    * q : Para no reemplazar NINGUNA.
-    * l : Para reemplazar solo la primera de todas.
-    * Ctrl + e (^E) : Desplazar la pantalla para ver el contexto
+- r : permite reemplazar un solo caracter en la posición donde se encuentre el cursor.
+- r : permite acceder al modo reemplazar y estará reemplanzando todos los caracteres hasta que se decida salir del modo con la tecla **esc**.
+
+en el editor de texto, también se pueden realizar el remplazo de caracteres a partir de línea de comandos:
+
+- :s/\<palabra a buscar\>/\<palabra a reemplazar\>
+- :s/\<palabra a buscar\>/\<palabra a reemplazar\>/g
+- :s/\<palabra a buscar\>/\<palabra a reemplazar\>/gc : preguntando confirmacion
+    * y : para reemplazar la coincidencia sombreada.
+    * n : para no reemplazar la coincidencia.
+    * a : para reemplazar todas.
+    * q : para no reemplazar ninguna.
+    * l : para reemplazar solo la primera de todas.
+    * ctrl + e (^e) : Desplazar la pantalla para ver el contexto
     * Ctrl + y (^Y) : Desplazan la pantalla para ver el contexto
 
 - :%s/<Palabra a buscar>/<Palabra a reemplazar>
