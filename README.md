@@ -123,15 +123,15 @@ Las teclas para activarlo son:
 - **`c`** : Viene de la palabra "change" y permite cambiar directamente del modo visual al modo insertar.
 - **`s`** : Viene de la palabra "subsitute" y permite realizar la sustitución directa de texto, tiene un funcionamiento muy parecido a la tecla "x".
 - **`p`** : Viene de la palabra "paste" y permite **pegar** la sección de texto sombreada con el modo visual. este pegado de texto va después del cursor.
-- **`P`** ("p" mayúscula) : Funcionamiento inverso al de "p", ya que este realiza el mismo pegado de texto pero antes del cursor.
+- **`P`** : Funcionamiento inverso al de "p", ya que este realiza el mismo pegado de texto pero antes del cursor.
 
 ## Reemplazar
-este modo es muy parecido al modo "insertar" pero a diferencia de este, cualquier tecla va a estar **reemplazando** al caracter en el que se encuentre posicionado el cursor.
+Este modo es muy parecido al modo "insertar" pero a diferencia de este, cualquier tecla va a estar **reemplazando** al caracter en el que se encuentre posicionado el cursor.
 
-existen 2 teclas que permiten reemplazar caracteres:
+Existen 2 teclas que permiten reemplazar caracteres:
 
 - **`r`** : Permite reemplazar un solo caracter en la posición donde se encuentre el cursor.
-- **`r`** : Permite acceder al modo reemplazar y estará reemplanzando todos los caracteres hasta que se decida salir del modo con la tecla **esc**.
+- **`r`** : Permite acceder al modo reemplazar y estará reemplanzando todos los caracteres hasta que se decida salir del modo con la tecla **Esc**.
 
 En el editor de texto, también se pueden realizar el remplazo de caracteres a partir de línea de comandos:
 
@@ -141,11 +141,11 @@ En el editor de texto, también se pueden realizar el remplazo de caracteres a p
 
 Las acciones que se encontrarán para elegir para cada coincidencia son:
 
-    * **`y`** : Para reemplazar la coincidencia sombreada.
-    * **`n`** : Para no reemplazar la coincidencia.
-    * **`a`** : Para reemplazar todas.
-    * **`q`** : Para no reemplazar ninguna.
-    * **`l`** : Para reemplazar solo la primera de todas.
+    - **`y`** : Para reemplazar la coincidencia sombreada.
+    - **`n`** : Para no reemplazar la coincidencia.
+    - **`a`** : Para reemplazar todas.
+    - **`q`** : Para no reemplazar ninguna.
+    - **`l`** : Para reemplazar solo la primera de todas.
 
 - **`:%s/<Palabra a buscar>/<Palabra a reemplazar>`** : Realiza el mismo proceso que los comandos anteriores, pero este estará buscando las coincidencias en TODO EL ARCHIVO.
 
