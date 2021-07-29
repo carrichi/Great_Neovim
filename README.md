@@ -137,10 +137,7 @@ En el editor de texto, también se pueden realizar el remplazo de caracteres a p
 
 - **`:s/\<Palabra a buscar\>/\<Palabra a reemplazar\>`** : Siguiendo la sintaxis reemplazará LA PRIMER coincidencia que se encuentre en LA LINEA ACTUAL del cursor.
 - **`:s/\<Palabra a buscar\>/\<Palabra a reemplazar\>/g`** : Con esta sintaxis se remplazarán TODAS las coincidencias en LA LÍNEA ACTUAL.
-- **`:s/\<Palabra a buscar\>/\<Palabra a reemplazar\>/gc`** : Este comando permite reemplazar TODAS las incidencias en la mima línea pero pregunta que se realizará una a una.
-
-Las acciones que se encontrarán para elegir para cada coincidencia son:
-
+- **`:s/\<Palabra a buscar\>/\<Palabra a reemplazar\>/gc`** : Este comando permite reemplazar TODAS las incidencias en la mima línea pero pregunta que se realizará una a una. Las acciones que se encontrarán para elegir para cada coincidencia son:
     - **`y`** : Para reemplazar la coincidencia sombreada.
     - **`n`** : Para no reemplazar la coincidencia.
     - **`a`** : Para reemplazar todas.
