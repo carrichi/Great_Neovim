@@ -296,7 +296,7 @@ Dentro del editor de código es posible cambiar los esquemas de color y para rea
 
 Para algunos esquemas de color será requerido contar con una terminal de 256 colores, por lo tanto, se recomienda añadir lo siguiente:
 
-```
+```vim
 if (has("nvim"))
     let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 endif
