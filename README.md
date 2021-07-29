@@ -350,27 +350,47 @@ endif
 
 Esquemas recomendados:
 
-- 'joshdick/[onedark]().vim'
-- 'articicestudio/[nord-vim]()'
-- 'cocopon/[iceberg]().vim'
+- [Onedark](https://github.com/joshdick/onedark.vim)
+
+Para utilizarlo se escribiría como extensión lo siguiente: 'joshdick/onedark.vim'
+
+- [Nord](https://github.com/arcticicestudio/nord-vim)
+
+Para utilizarlo se escribiría como extensión lo siguiente: 'articicestudio/nord-vim'
+
+- [Iceberg](https://github.com/cocopon/iceberg.vim)
+
+Para utilizarlo se escribiría como extensión lo siguiente: 'cocopon/iceberg.vim'
 
 #### Barra flotante de información
 
-- **Lightline** : Integra una barra de información en el editor.
+- **Lightline** : Integra una barra flotante de información en el editor.
 
 - 'itchyny/[lightline.vim](https://github.com/itchyny/lightline.vim)' :  
 
-Complementos:
+Complementos para la barra flotante:
 
-- 'dense-analysis/[ale](https://github.com/dense-analysis/ale)' : 
-- 'maximbaz/[lightline-ale](https://github.com/maximbaz/lightline-ale)' : 
-- 'hallzy/[lightline-onedark](https://github.com/hallzy/lightline-onedark)' : theme
+- [**Lightline-onedark**](https://github.com/hallzy/lightline-onedark) : Extensión para indicar un nuevo esquema de colores a la barra flotante.
+
+Para utilizarlo se escribiría como extensión lo siguiente: 'hallzy/lightline-onedark'
+
+- [**Ale**](https://github.com/dense-analysis/ale) : Extensión que permite mostrar errores en código.
+
+Para utilizarlo se escribiría como extensión lo siguiente: 'dense-analysis/ale'
+
+- [**Lightline-ale**](https://github.com/maximbaz/lightline-ale) : Soporte de la extención "Ale" para que muestre errores o advertencias desde la barra flotante.
+
+Para utilizarlo se escribiría como extensión lo siguiente: 'maximbaz/lightline-ale'
+
+- [**Vim-fugitive**](https://github.com/tpope/vim-fugitive) :
+
+Para utilizarlo se escribiría como extensión lo siguiente: 'tpope/vim-fugitive'
 
 #### Visor de archivos
 
-- **Nerdtree** : 
+- [**Nerdtree**](https://github.com/preservim/nerdtree) : Permite mostrar la jerarquía de archivos desde el editor de código.
 
-- 'preservim/[nerdtree](https://github.com/preservim/nerdtree)'
+Para utilizarlo se escribiría como extensión lo siguiente: 'preservim/nerdtree'
 
 Opciones
 m - Mostrar alternativas
@@ -380,10 +400,6 @@ m - Mostrar alternativas
 - **Navigator** : Con el t y moverse con el Ctrl + h, j, k, l
 
 - 'christoomey/[vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)' :
-
-#### Uso de Git
-
-- 'tpope/[vim-fugitive](https://github.com/tpope/vim-fugitive)' :
 
 # Neovim nivel avanzado
 
